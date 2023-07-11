@@ -34,7 +34,6 @@ body {
 .title {
   color: var(--light-lavender);
   font-size: 1.25rem;
-  /* font-size: clamp(0.75rem 2vw, 1.5rem); */
   font-weight: 500;
 }
 .result-score-contain {
@@ -46,7 +45,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* background-color: var(--light-royal-blue-bg); */
   background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   border-radius: 50%;
 }
@@ -189,7 +187,6 @@ body {
   }
   .result-body {
     width: 50%;
-    /* padding: 2.6rem; */
   }
   .continue-btn {
     margin-top: 2.4rem;

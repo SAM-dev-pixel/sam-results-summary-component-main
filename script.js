@@ -36,7 +36,6 @@ fetch("data.json")
     const icons = data.map((data) => data.icon);
     const categories = data.map((category) => category.category);
     const scores = data.map((data) => data.score);
-    // console.log(scores);
     summaryIcons.forEach((icon, i) => (icon.src = icons[i + 1]));
     summaryCategories.forEach(
       (category, i) => (category.textContent = categories[i + 1])
