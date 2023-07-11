@@ -36,10 +36,24 @@ fetch("data.json")
     const icons = data.map((data) => data.icon);
     const categories = data.map((category) => category.category);
     const scores = data.map((data) => data.score);
-    console.log(scores);
+    // console.log(scores);
     summaryIcons.forEach((icon, i) => (icon.src = icons[i + 1]));
     summaryCategories.forEach(
       (category, i) => (category.textContent = categories[i + 1])
     );
     summaryScores.forEach((score, i) => (score.textContent = scores[i + 1]));
   });
+
+// RIPPLES EFFECT
+function ripples(e) {
+  let x = e.clientX - e.target.offsetLeft;
+  let y = e.clientY - e.target.offsetTop;
+  const ripple = document.createElement("span");
+  ripple.classList.add("ripple");
+  ripple.style.left = x + "px";
+  ripple.style.top = y + "px";
+  this.append(ripple);
+  setTimeout(() => ripple.remove(), 1000);
+}
+// when continue button clicked on -> show the ripple effect
+document.querySelector(".continue-btn").addEventListener("click", ripples);
