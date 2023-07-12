@@ -116,6 +116,9 @@ body {
   cursor: pointer;
   overflow: hidden;
 }
+.continue-btn:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
 .ripple {
   position: absolute;
   background-color: var(--white);
